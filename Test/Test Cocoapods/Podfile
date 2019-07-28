@@ -1,0 +1,26 @@
+target 'Test iOS' do
+    use_frameworks!
+    platform :ios, '9.0'
+
+    pod 'tdjson', :path => '../../'
+end
+
+target 'Test macOS' do
+    platform :osx, '10.9'
+
+    pod 'tdjson', :path => '../../'
+end
+
+target 'Test tvOS' do
+    use_frameworks!
+    platform :tvos, '9.0'
+
+    pod 'tdjson', :path => '../../'
+end
+
+target 'Test watchOS Extension' do
+    use_frameworks!
+    platform :watchos, '2.0'
+
+    pod 'tdjson', :path => '../../'
+end

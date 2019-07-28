@@ -22,6 +22,7 @@ xcuserdata
 *.xcuserstate
 *.xcscmblueprint
 *.zip
+*.tar.gz
 
 ## Obj-C/Swift specific
 *.hmap

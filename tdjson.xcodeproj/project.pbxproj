@@ -581,6 +581,7 @@
 				TargetAttributes = {
 					60B0681322E8E84C00FC6ADE = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					60B0682422E8E8F300FC6ADE = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -804,6 +805,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -828,6 +830,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ua.ky1vstar.tdjson-iOS";
 				PRODUCT_NAME = tdjson;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -836,6 +840,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -860,6 +865,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ua.ky1vstar.tdjson-iOS";
 				PRODUCT_NAME = tdjson;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

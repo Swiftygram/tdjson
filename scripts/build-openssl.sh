@@ -8,14 +8,13 @@
 makefile="Python-Apple-support/Makefile"
 
 if ! grep -Fq "arm64_32" $makefile; then
-#    sed -i '' "s/watchos-version-min=4.0/watchos-version-min=2.0/g" $makefile
+    sed -i '' "s/watchos-version-min=4.0/watchos-version-min=2.0/g" $makefile
     sed -i '' "s/ watchos.armv7k/ watchos.armv7k watchos.arm64_32/g" $makefile
     sed -i '' $'s/watchos.armv7k=-fembed-bitcode/watchos.armv7k=-fembed-bitcode\\\nCFLAGS-watchos.arm64_32=-fembed-bitcode/g' $makefile
 fi
 
 #TODO: change openssl version
-#platforms="macOS iOS watchOS tvOS"
-platforms="watchOS"
+platforms="macOS iOS watchOS tvOS"
 for platform in $platforms;
 do
   echo $platform

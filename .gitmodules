@@ -1,0 +1,6 @@
+[submodule "scripts/td"]
+	path = scripts/td
+	url = https://github.com/tdlib/td.git
+[submodule "scripts/Python-Apple-support"]
+	path = scripts/Python-Apple-support
+	url = https://github.com/pybee/Python-Apple-support

@@ -2,17 +2,16 @@
 ios_min_version="9.0"
 osx_min_version="10.9"
 tvos_min_version="9.0"
-watchos_min_version="4.0"
+watchos_min_version="2.0"
 
 td_path=$(grealpath td)
 root_path=$(grealpath ..)
 
-#rm -rf build
-#mkdir -p build
+rm -rf build
+mkdir -p build
 cd build
 
-#platforms="macOS iOS watchOS tvOS"
-platforms="watchOS"
+platforms="macOS iOS watchOS tvOS"
 
 for platform in $platforms;
 do
@@ -47,8 +46,7 @@ do
         cp $i $platform/$(basename -- $i)
     done
   else
-#    simulators="0 1"
-    simulators="1"
+    simulators="0 1"
 
     for simulator in $simulators;
     do
