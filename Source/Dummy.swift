@@ -6,3 +6,8 @@
 //  Copyright © 2019 ky1vstar. All rights reserved.
 //
 
+import Foundation
+
+internal func dummy() {
+    _ = td_json_client_create
+}
